@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.perocho.perocho_11917.MainActivity">
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="34dp"
+        android:text="Data:"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/etMessage"
+        android:layout_alignLeft="@+id/etMessage"
+        android:layout_alignStart="@+id/etMessage"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/data"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/fname"
+        android:layout_toRightOf="@+id/fname"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:text="File Name:"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/etMessage"
+        android:layout_alignLeft="@+id/data"
+        android:layout_alignStart="@+id/data" />
+
+    <Button
+        android:id="@+id/shared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shared Preferences"
+        android:layout_below="@+id/etMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/internalS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Internal Storage"
+        android:layout_below="@+id/shared"
+        android:layout_centerHorizontal="true"
+        android:onClick="InternalS"/>
+
+    <Button
+        android:id="@+id/InternalC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Internal Cache"
+        android:layout_below="@+id/internalS"
+        android:layout_centerHorizontal="true"
+        android:onClick="InternalC"/>
+
+    <Button
+        android:id="@+id/ExternalC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InternalC"
+        android:layout_alignStart="@+id/InternalC"
+        android:layout_below="@+id/InternalC"
+        android:text="External Cache"
+        android:onClick="ExternalC"/>
+
+    <Button
+        android:id="@+id/ExternalS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="External Storage"
+        android:layout_below="@+id/ExternalC"
+        android:layout_alignLeft="@+id/internalS"
+        android:layout_alignStart="@+id/internalS"
+        android:onClick="ExternalC"/>
+
+    <Button
+        android:id="@+id/ExternalP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="External Public Storage"
+        android:layout_below="@+id/ExternalS"
+        android:layout_centerHorizontal="true"
+        android:onClick="ExternalP"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@+id/ExternalP"
+        android:layout_toRightOf="@+id/fname"
+        android:layout_toEndOf="@+id/fname"
+        android:layout_marginTop="16dp"
+        android:onClick="next"/>
+</RelativeLayout>

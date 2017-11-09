@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etMessage" type="id" />
+    <item name="tvData" type="id" />
+    <item name="btnEPS" type="id" />
+    <item name="btnEC" type="id" />
+</resources>

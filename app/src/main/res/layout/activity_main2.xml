@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.perocho.perocho_11917.MainActivity">
+
+    <Button
+        android:id="@+id/btnSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnIS"
+        android:layout_centerHorizontal="true"
+        android:onClick="saveSP"
+        android:text="Shared Preferences" />
+
+    <Button
+        android:id="@+id/btnIS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveIS"
+        android:text="Internal Storage"
+        android:layout_above="@+id/btnIC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnIC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveIC"
+        android:text="Internal Cache"
+        android:layout_above="@+id/btnIC"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnIC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveEC"
+        android:text="External Cache"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/btnIC"
+        android:layout_alignEnd="@+id/btnIC" />
+
+    <Button
+        android:id="@+id/btnES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveES"
+        android:text="External Storage"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/btnIC"
+        android:layout_alignLeft="@+id/btnIC"
+        android:layout_alignStart="@+id/btnIC" />
+
+    <Button
+        android:id="@+id/btnSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:onClick="saveEP"
+        android:text="External Public Storage"
+        android:layout_below="@+id/btnES"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnprevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="previous"
+        android:text="Previous" />
+
+    <TextView
+        android:id="@+id/tV_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/e_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSP"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnSP"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
+</RelativeLayout>
